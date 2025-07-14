@@ -37,7 +37,7 @@ const Header = ({
                                 placeholder="Search products..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                                className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500 transition duration-200"
                             />
                         </div>
                         <button
@@ -77,7 +77,7 @@ const Header = ({
                                     placeholder="Search products..."
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500 transition duration-200"
                                 />
                             </div>
                         </div>

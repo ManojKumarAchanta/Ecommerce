@@ -106,7 +106,7 @@ const ProductFilters = ({
                                     placeholder="Min"
                                     value={priceRange.min}
                                     onChange={(e) => onPriceRangeChange({ ...priceRange, min: e.target.value })}
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                 />
                                 <span className="text-gray-500">-</span>
                                 <input
@@ -114,7 +114,7 @@ const ProductFilters = ({
                                     placeholder="Max"
                                     value={priceRange.max}
                                     onChange={(e) => onPriceRangeChange({ ...priceRange, max: e.target.value })}
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                 />
                             </div>
 

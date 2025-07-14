@@ -181,8 +181,8 @@ const CheckoutPage = ({
                                 {steps.map((step, index) => (
                                     <div key={step.number} className="flex items-center">
                                         <div className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${currentStep >= step.number
-                                                ? 'bg-blue-600 border-blue-600 text-white'
-                                                : 'border-gray-300 text-gray-500'
+                                            ? 'bg-blue-600 border-blue-600 text-white'
+                                            : 'border-gray-300 text-gray-500'
                                             }`}>
                                             {currentStep > step.number ? (
                                                 <CheckCircle className="w-5 h-5" />
@@ -219,7 +219,7 @@ const CheckoutPage = ({
                                                 type="text"
                                                 value={formData.firstName}
                                                 onChange={(e) => handleInputChange('firstName', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -229,7 +229,7 @@ const CheckoutPage = ({
                                                 type="text"
                                                 value={formData.lastName}
                                                 onChange={(e) => handleInputChange('lastName', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -239,7 +239,7 @@ const CheckoutPage = ({
                                                 type="email"
                                                 value={formData.email}
                                                 onChange={(e) => handleInputChange('email', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -249,7 +249,7 @@ const CheckoutPage = ({
                                                 type="tel"
                                                 value={formData.phone}
                                                 onChange={(e) => handleInputChange('phone', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -259,7 +259,7 @@ const CheckoutPage = ({
                                                 type="text"
                                                 value={formData.address}
                                                 onChange={(e) => handleInputChange('address', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -269,7 +269,7 @@ const CheckoutPage = ({
                                                 type="text"
                                                 value={formData.city}
                                                 onChange={(e) => handleInputChange('city', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -279,7 +279,7 @@ const CheckoutPage = ({
                                                 type="text"
                                                 value={formData.state}
                                                 onChange={(e) => handleInputChange('state', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -289,7 +289,7 @@ const CheckoutPage = ({
                                                 type="text"
                                                 value={formData.zipCode}
                                                 onChange={(e) => handleInputChange('zipCode', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -320,7 +320,7 @@ const CheckoutPage = ({
                                                     type="text"
                                                     value={formData.billingFirstName}
                                                     onChange={(e) => handleInputChange('billingFirstName', e.target.value)}
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 />
                                             </div>
                                             <div>
@@ -329,7 +329,7 @@ const CheckoutPage = ({
                                                     type="text"
                                                     value={formData.billingLastName}
                                                     onChange={(e) => handleInputChange('billingLastName', e.target.value)}
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 />
                                             </div>
                                             <div className="md:col-span-2">
@@ -338,7 +338,7 @@ const CheckoutPage = ({
                                                     type="text"
                                                     value={formData.billingAddress}
                                                     onChange={(e) => handleInputChange('billingAddress', e.target.value)}
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 />
                                             </div>
                                             <div>
@@ -347,7 +347,7 @@ const CheckoutPage = ({
                                                     type="text"
                                                     value={formData.billingCity}
                                                     onChange={(e) => handleInputChange('billingCity', e.target.value)}
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 />
                                             </div>
                                             <div>
@@ -356,7 +356,7 @@ const CheckoutPage = ({
                                                     type="text"
                                                     value={formData.billingState}
                                                     onChange={(e) => handleInputChange('billingState', e.target.value)}
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 />
                                             </div>
                                             <div>
@@ -365,7 +365,7 @@ const CheckoutPage = ({
                                                     type="text"
                                                     value={formData.billingZipCode}
                                                     onChange={(e) => handleInputChange('billingZipCode', e.target.value)}
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 />
                                             </div>
                                         </div>
@@ -384,7 +384,7 @@ const CheckoutPage = ({
                                                 value={formData.cardNumber}
                                                 onChange={(e) => handleInputChange('cardNumber', e.target.value)}
                                                 placeholder="1234 5678 9012 3456"
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -394,7 +394,7 @@ const CheckoutPage = ({
                                                 type="text"
                                                 value={formData.cardName}
                                                 onChange={(e) => handleInputChange('cardName', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
@@ -403,7 +403,7 @@ const CheckoutPage = ({
                                             <select
                                                 value={formData.expiryMonth}
                                                 onChange={(e) => handleInputChange('expiryMonth', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             >
                                                 <option value="">Month</option>
@@ -419,7 +419,7 @@ const CheckoutPage = ({
                                             <select
                                                 value={formData.expiryYear}
                                                 onChange={(e) => handleInputChange('expiryYear', e.target.value)}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             >
                                                 <option value="">Year</option>
@@ -436,7 +436,7 @@ const CheckoutPage = ({
                                                 onChange={(e) => handleInputChange('cvv', e.target.value)}
                                                 placeholder="123"
                                                 maxLength="4"
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none -2 -blue-500"
                                                 required
                                             />
                                         </div>
