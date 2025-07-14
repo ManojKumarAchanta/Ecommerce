@@ -68,14 +68,14 @@ const ProductDetailsModal = ({
                         <button
                             onClick={() => onWishlistToggle(product.id)}
                             className={`p-2 rounded-full ${isWishlisted
-                                ? 'bg-red-500 text-white'
-                                : 'bg-black text-white'
+                                ? 'bg-red-500 '
+                                : 'bg-black '
                                 }`}
                             title={isWishlisted ? "Remove from Wishlist" : "Add to Wishlist"}
                         >
                             <Heart className={`w-5 h-5 ${isWishlisted ? 'fill-current' : ''}`} />
                         </button>
-                        <button className="p-2 bg-black text-white rounded-full">
+                        <button className="p-2 bg-black  rounded-full">
                             <Share2 className="w-5 h-5" />
                         </button>
                         <button

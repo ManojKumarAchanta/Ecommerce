@@ -21,7 +21,7 @@ const ProductCard = ({
                 <div className="absolute top-2 right-2 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition duration-300">
                     <button
                         onClick={() => onQuickView(product)}
-                        className="bg-blue-600 text-white p-2 rounded-full shadow-md"
+                        className="bg-blue-600  p-2 rounded-full shadow-md"
                         title="Quick View"
                     >
                         <Eye className="w-4 h-4" />
@@ -29,9 +29,9 @@ const ProductCard = ({
                     <button
                         onClick={() => onWishlistToggle(product.id)}
                         className={`p-2 rounded-full shadow-md ${isWishlisted
-                            ? 'bg-red-500 text-white'
-                            : 'bg-black text-white'
-                            }`}
+                            ? 'bg-red-600 '
+                            : 'bg-black '
+                            }`} 
                         title={isWishlisted ? "Remove from Wishlist" : "Add to Wishlist"}
                     >
                         <Heart className={`w-4 h-4 ${isWishlisted ? 'fill-current' : ''}`} />
