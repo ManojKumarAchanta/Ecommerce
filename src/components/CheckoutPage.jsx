@@ -181,8 +181,8 @@ const CheckoutPage = ({
                                 {steps.map((step, index) => (
                                     <div key={step.number} className="flex items-center">
                                         <div className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${currentStep >= step.number
-                                            ? 'bg-blue-600 border-blue-600 text-white'
-                                            : 'border-gray-300 text-gray-500'
+                                                ? 'bg-blue-600 border-blue-600 text-white'
+                                                : 'border-gray-300 text-gray-500'
                                             }`}>
                                             {currentStep > step.number ? (
                                                 <CheckCircle className="w-5 h-5" />
